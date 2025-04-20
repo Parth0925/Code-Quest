@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API=axios.create({
-    baseURL:"https://codequest-u71p.onrender.com"
+    baseURL:"https://codequest-u71p.onrender.com",
+    withCredentials: true
 });
 
 API.interceptors.request.use((req)=>{
