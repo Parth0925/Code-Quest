@@ -58,7 +58,8 @@ io.on('connection', (socket) => {
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors({
-  origin: "http://localhost:3000",  // React app's URL
+  origin: ["http://localhost:3000", 
+          "codeequest.netlify.app"]  // React app's URL
 }));
 
 // app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
