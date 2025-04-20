@@ -1,0 +1,136 @@
+.ask-question {
+  min-height: 80vh;
+  background-color: #f1f2f3;
+}
+
+.ask-ques-container {
+  margin: auto;
+  padding: 0px 20px 20px 20px;
+  max-width: 1200px;
+}
+
+.ask-ques-container h1 {
+  padding: 80px 0px 20px 0px;
+}
+
+.ask-ques-container form .ask-form-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 0 20px 48px rgb(0 0 0 / 5%), 0 1px 4px rgb(0 0 0 / 10%);
+}
+
+.ask-form-container label h4 {
+  margin-bottom: 0%;
+}
+
+.ask-form-container label p {
+  margin: 0%;
+  font-size: 13px;
+  padding: 3px 0px;
+}
+
+.ask-form-container label input,
+.ask-form-container label textarea {
+  padding: 10px;
+  border: solid 1px #0000003e;
+  font-family: "Roboto", sans-serif;
+  width: calc(100% - 20px);
+  resize: none;
+}
+
+.review-btn {
+  margin: 50px 0px;
+  padding: 10px;
+  background-color: #009dff;
+  border: solid 1px #009dff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-btn:hover {
+  background-color: #0086d8;
+}
+
+/* Media Queries for responsiveness */
+
+/* For screen sizes up to 1020px */
+@media screen and (max-width: 1020px) {
+  .ask-ques-container {
+      padding: 0px 15px; /* Adjust padding to fit on smaller screens */
+  }
+
+  .ask-ques-container h1 {
+      padding: 60px 0px 15px 0px; /* Adjust title padding */
+  }
+
+  .ask-form-container {
+      padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .ask-form-container label input,
+  .ask-form-container label textarea {
+      padding: 8px; /* Reduce padding inside input/textarea */
+  }
+
+  .review-btn {
+      margin: 30px 0px; /* Reduce margin for better fit */
+      padding: 8px; /* Reduce padding to fit button better */
+  }
+}
+
+/* For screen sizes up to 760px */
+@media screen and (max-width: 760px) {
+  .ask-ques-container {
+      padding: 0px 10px; /* Further reduce padding */
+  }
+
+  .ask-ques-container h1 {
+      padding: 40px 0px 15px 0px; /* Adjust title padding */
+      font-size: 1.5rem; /* Slightly reduce font size for smaller screens */
+  }
+
+  .ask-form-container {
+      padding: 10px; /* Reduce padding */
+  }
+
+  .ask-form-container label input,
+  .ask-form-container label textarea {
+      padding: 8px; /* Adjust padding */
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .review-btn {
+      margin: 20px 0px; /* Further reduce margin */
+      padding: 8px 15px; /* Adjust button padding */
+  }
+}
+
+/* For very small screens, below 480px */
+@media screen and (max-width: 480px) {
+  .ask-ques-container {
+      padding: 0px 5px; /* Minimal padding for very small screens */
+  }
+
+  .ask-ques-container h1 {
+      padding: 30px 0px 10px 0px; /* Reduce title padding */
+      font-size: 1.2rem; /* Reduce font size */
+  }
+
+  .ask-form-container {
+      padding: 8px; /* Further reduce padding */
+  }
+
+  .ask-form-container label input,
+  .ask-form-container label textarea {
+      padding: 6px; /* Reduce input padding */
+      font-size: 13px; /* Adjust font size */
+  }
+
+  .review-btn {
+      margin: 15px 0px; /* Adjust margin for small screens */
+      padding: 8px 12px; /* Adjust button padding */
+  }
+}

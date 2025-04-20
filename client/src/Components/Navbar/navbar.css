@@ -1,0 +1,187 @@
+.main-nav {
+  min-height: 50px;
+  width: 100%;
+  margin: 0% auto;
+  border-top: solid 3px #ef8236;
+  box-shadow: 0px 1px 5px #00000033;
+  position: fixed;
+  z-index: 15;
+  top: 0%;
+  left: 0%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  height: 100%;
+  min-width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slide-in-icon {
+  display: none;
+  transition: 0.2s;
+  padding: 5px 6px 3px 6px;
+  border-radius: 50%;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .navbar-1 {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbar .navbar-2 {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  padding: 5px 25px;
+}
+
+.nav-item {
+  margin: 0px 3px;
+  font-size: small;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(69, 69, 69);
+  transition: 0.2s;
+}
+
+.nav-btn {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.nav-item:hover,
+.slide-in-icon:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.navbar .navbar-1 form {
+  flex-grow: 1;
+  padding: 0px 12px;
+  position: relative;
+}
+
+.navbar .navbar-1 form input {
+  width: 600px;
+  margin: 0;
+  padding: 8px 10px 8px 32px;
+  font-size: 13px;
+  border: solid 1px #0000003e;
+  border-radius: 3px;
+}
+
+.navbar .navbar-1 form .search-icon {
+  position: absolute;
+  left: 25px;
+  top: 8px;
+}
+
+.nav-links {
+  padding: 7px 13px;
+  border: solid 1px blue;
+  border-radius: 3px;
+  background-color: #e7f8fe;
+  cursor: pointer;
+}
+
+.nav-links:hover {
+  background-color: #d3e4eb;
+}
+
+/* Media Queries for responsiveness */
+
+/* For screen sizes up to 1120px */
+@media screen and (max-width: 1120px) {
+  .navbar .navbar-1 form {
+      display: none; /* Hides the search bar */
+  }
+}
+
+/* For screen sizes up to 760px */
+@media screen and (max-width: 760px) {
+  .slide-in-icon {
+      display: block; /* Displays the slide-in menu icon */
+  }
+
+  .navbar {
+      min-width: 90%; /* Makes the navbar take more space */
+  }
+
+  .navbar .navbar-1 {
+      flex-direction: column; /* Stack navbar items vertically */
+      align-items: flex-start; /* Align items to the left */
+  }
+
+  .nav-logo {
+      padding: 5px 15px; /* Adjust logo padding */
+  }
+
+  .nav-item {
+      font-size: 14px; /* Slightly increase font size */
+      margin: 5px 0; /* Adjust margin */
+  }
+
+  .navbar .navbar-1 form input {
+      width: 100%; /* Make the search bar full-width on smaller screens */
+  }
+
+  .nav-links {
+      padding: 10px 15px; /* Increase padding for better touch target */
+      font-size: 14px; /* Increase font size */
+  }
+}
+
+/* For screen sizes up to 620px */
+@media screen and (max-width: 620px) {
+  .navbar .navbar-1 .res-nav {
+      display: none; /* Hides certain navbar elements */
+  }
+
+  .navbar .navbar-1 form input {
+      width: 100%; /* Full-width input on very small screens */
+  }
+
+  .nav-links {
+      padding: 8px 12px; /* Adjust padding for small screens */
+  }
+}
+
+/* For very small screens, below 480px */
+@media screen and (max-width: 480px) {
+  .main-nav {
+      min-height: 45px; /* Reduce height of navbar */
+  }
+
+  .nav-logo {
+      padding: 5px 10px; /* Adjust logo padding */
+  }
+
+  .nav-item {
+      font-size: 12px; /* Reduce font size for small devices */
+  }
+
+  .nav-links {
+      padding: 8px 10px; /* Adjust padding */
+      font-size: 12px; /* Reduce font size */
+  }
+
+  .navbar .navbar-1 form input {
+      font-size: 12px; /* Reduce font size in search input */
+  }
+
+  .slide-in-icon {
+      padding: 6px 7px; /* Slightly adjust icon size */
+  }
+}

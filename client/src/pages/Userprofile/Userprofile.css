@@ -1,0 +1,172 @@
+/* Main container for user details */
+.user-details-container {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column; /* Stack elements on small screens */
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Container for user information and edit button */
+.user-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* User name styling */
+.user-name {
+  padding-left: 20px;
+}
+
+.user-name p {
+  color: #7e7e7e;
+}
+
+/* Edit profile button styling */
+.edit-profile-btn {
+  padding: 8px 12px;
+  border: solid 1px #7e7e7e;
+  border-radius: 2px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-profile-btn:hover {
+  background-color: #f5f9fc;
+}
+
+/* Edit profile section title */
+.edit-profile-title {
+  padding: 20px 0px;
+  border-bottom: solid 1px #dbd9d9;
+}
+
+.edit-profile-title-2 {
+  color: grey;
+  font-weight: 400;
+}
+
+/* Form styling for editing profile */
+.edit-profile-form {
+  padding: 20px;
+  border: solid 1px #dbd9d9;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 800px; /* Ensure the form doesn't stretch too wide */
+  margin: 0 auto;
+}
+
+/* Form label and input styling */
+.edit-profile-form label h3,
+.edit-profile-form label p {
+  margin: 0;
+  padding: 3px 0px;
+  font-size: 14px;
+}
+
+.edit-profile-form label input,
+.edit-profile-form label textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: solid 1px #dbd9d9;
+  width: 100%;
+  border-radius: 4px; /* Added rounded corners for inputs */
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* User profile submit button */
+.user-submit-btn {
+  padding: 14px 10px;
+  background-color: #0a95ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.user-submit-btn:hover {
+  background-color: #0074cc;
+}
+
+/* Cancel button styling */
+.user-cancel-btn {
+  padding: 14px 10px;
+  color: #0a95ff;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+
+/* For medium screens (max-width: 1020px) */
+@media screen and (max-width: 1020px) {
+  .user-details-container {
+      margin-top: 30px; /* Reduce margin on smaller screens */
+  }
+
+  /* Stacks user details and form in a column */
+  .user-details {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .edit-profile-form label input,
+  .edit-profile-form label textarea {
+      width: 90%; /* Reduce input width to fit better */
+  }
+
+  .edit-profile-title-2 {
+      font-size: 13px; /* Slightly smaller font for titles */
+  }
+}
+
+/* For smaller screens (max-width: 760px) */
+@media screen and (max-width: 760px) {
+  .user-details-container {
+      margin-top: 20px; /* Further reduce margin for smaller devices */
+  }
+
+  .user-submit-btn, .user-cancel-btn {
+      width: 100%; /* Make buttons take full width on small screens */
+      margin-left: 0; /* Remove left margin on cancel button */
+      margin-top: 10px; /* Add space between buttons */
+  }
+
+  .edit-profile-form {
+      padding: 15px;
+      width: 100%; /* Ensure the form takes full width */
+  }
+
+  .edit-profile-form label input,
+  .edit-profile-form label textarea {
+      width: 100%; /* Ensure inputs take full width */
+      font-size: 13px; /* Slightly reduce font size on mobile */
+  }
+}
+
+/* For very small screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .edit-profile-form label input,
+  .edit-profile-form label textarea {
+      width: 100%;
+      font-size: 12px; /* Further reduce input size */
+  }
+
+  .edit-profile-form {
+      padding: 10px; /* Reduce form padding */
+  }
+
+  .user-submit-btn,
+  .user-cancel-btn {
+      padding: 12px 8px; /* Reduce button padding for smaller screens */
+  }
+}

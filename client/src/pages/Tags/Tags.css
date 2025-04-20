@@ -1,0 +1,117 @@
+.tags-h1 {
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+.tags-p {
+  margin: 0px;
+  font-size: 15px;
+}
+
+.tags-list-container {
+  padding: 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.tag {
+  padding: 10px;
+  border: solid 1px #d2d2d2;
+  border-radius: 2px;
+  background-color: #ffffff;
+  transition: 0.3s all ease;
+}
+
+.tag:hover {
+  border-color: #009dff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tag h5 {
+  display: inline-block;
+  margin: 10px 0px;
+  padding: 5px 5px;
+  background-color: #e1ecf4;
+  color: #39739d;
+  font-size: 16px;
+}
+
+.tag p {
+  font-size: 14px;
+  color: #323232;
+  line-height: 17px;
+}
+
+/* Media Queries for responsiveness */
+
+/* For small screens (max-width: 1020px) */
+@media screen and (max-width: 1020px) {
+  .tags-list-container {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Adjust grid size */
+      gap: 8px; /* Slightly reduce the gap */
+  }
+
+  .tag h5 {
+      font-size: 15px; /* Reduce font size for headings */
+  }
+
+  .tag p {
+      font-size: 13px; /* Make the description text smaller */
+  }
+}
+
+/* For screens between 760px and 1020px */
+@media screen and (max-width: 820px) {
+  .tags-h1 {
+      font-size: 24px; /* Slightly reduce the heading size */
+  }
+
+  .tags-p {
+      font-size: 14px; /* Reduce paragraph font size for readability */
+  }
+
+  .tags-list-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for mid-sized devices */
+      gap: 6px; /* Reduce gap */
+  }
+
+  .tag h5 {
+      font-size: 14px; /* Further reduce heading size */
+  }
+
+  .tag p {
+      font-size: 12px; /* Decrease description font size */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .tags-h1 {
+      font-size: 20px; /* Reduce heading font size */
+      text-align: center; /* Center align the heading for better mobile experience */
+      margin-top: 30px; /* Reduce top margin for mobile */
+  }
+
+  .tags-p {
+      font-size: 12px; /* Further reduce paragraph font size */
+  }
+
+  .tags-list-container {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjust grid size for mobile */
+      gap: 5px; /* Reduce gap between grid items */
+  }
+
+  .tag {
+      padding: 8px; /* Reduce padding inside the tags */
+  }
+
+  .tag h5 {
+      font-size: 13px; /* Further reduce the heading font size */
+      padding: 4px 4px; /* Adjust padding for headings */
+  }
+
+  .tag p {
+      font-size: 11px; /* Reduce description font size for mobile screens */
+  }
+}

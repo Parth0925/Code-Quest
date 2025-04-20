@@ -1,0 +1,41 @@
+/* Client/src/components/PublicFeed/PublicFeed.css */
+
+.public-feed {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .post-header h3 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .post-header span {
+    font-size: 0.9em;
+    color: gray;
+  }
+  
+  .post img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .post-actions button {
+    margin-right: 10px;
+  }
+  
