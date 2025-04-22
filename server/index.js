@@ -37,7 +37,7 @@ const corsOptions = {
     }
   },
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 };
 
@@ -244,6 +244,13 @@ app.post('/upload-video', (req, res) => {
 
 app.use('/user', userroutes);
 app.use('/questions', questionroutes);
+// app.options('/answer/post/:id', (req, res) => {
+//   res.setHeader('Access-Control-Allow-Origin', req.headers.origin || '*');
+//   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+//   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+//   res.setHeader('Access-Control-Allow-Credentials', 'true');
+//   return res.sendStatus(204);
+// });
 app.use('/answer', answerroutes);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use("/videos", videoRoutes);
