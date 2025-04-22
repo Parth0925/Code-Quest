@@ -2,6 +2,7 @@ import axios from "axios";
 
 const API=axios.create({
     baseURL:"https://codequest-u71p.onrender.com",
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     withCredentials: true
 });
 
