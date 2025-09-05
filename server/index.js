@@ -9,6 +9,12 @@ const app = express();
 dotenv.config();
 app.use(express.json({ limit: "30mb", extended: true }))
 app.use(express.urlencoded({ limit: "30mb", extended: true }))
+
+const allowedOrigins = [
+  "http://localhost:3000", 
+  "https://codequeest.netlify.app" 
+];
+
 app.use(cors());
 
 
