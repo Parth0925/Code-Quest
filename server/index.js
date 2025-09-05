@@ -15,7 +15,11 @@ const allowedOrigins = [
   "https://codequeest.netlify.app" 
 ];
 
-app.use(cors());
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ["GET", "POST", "PATCH", "DELETE"],
+  credentials: true
+}));
 
 
 
