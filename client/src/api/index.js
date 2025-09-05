@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API=axios.create({
      //baseURL:"http://localhost:5001",
-     baseURL: "https://codequest-backend.onrender.com",
+     baseURL: "https://code-quest-server.onrender.com",
      methods: ["GET","POST","PATCH","DELETE"],
      withCredentials: true
 
