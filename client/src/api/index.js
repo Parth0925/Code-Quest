@@ -3,8 +3,8 @@ import axios from "axios";
 const API=axios.create({
      //baseURL:"http://localhost:5001",
      baseURL: "https://codequest-backend.onrender.com",
-    methods: ["GET","POST","PATCH","DELETE"],
-    credentials: true
+     methods: ["GET","POST","PATCH","DELETE"],
+     credentials: true
 
 });
 
